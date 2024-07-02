@@ -1,11 +1,11 @@
 # CircuitDisguise.jl
 
 This is the Julia implementation of the Circuit Disguise method
-presented in the following research paper manuscript:
+presented in the following research paper:
 
-Can Aknesil and Elena Dubrova. "Circuit Disguise: Detecting Malicious Circuits in Cloud FPGAs without IP Disclosure".
+Can Aknesil and Elena Dubrova. "Circuit Disguise: Detecting Malicious Circuits in Cloud FPGAs without IP Disclosure". 2024 27th Euromicro Conference on Digital System Design (DSD). 2024.
 
-Circuit Disguise is a method that enables the detection of malicious
+Circuit Disguise is a method that enables detecting malicious
 circuits in cloud FPGA designs without the clients disclosing their
 designs to the cloud in an unprotected form. 
 
@@ -83,4 +83,14 @@ To generate documentation, run the following command in the project's top direct
 ```
 $ julia --project docs/make.jl
 ```
+
+## Benchmark designs
+
+Small hardware designs that are used for testing can be found in the
+`simple-designs` directory. Additional designs that are not included
+in the repository due to their large size are available in the
+following directory. This directory also contains the benchmark
+designs presented in the paper.
+
+https://kth-my.sharepoint.com/:f:/g/personal/aknesil_ug_kth_se/Et87B-WWiONGnlKbg4Td79sBeCoVUKmPY5MOkjGhf1ws_Q
 
