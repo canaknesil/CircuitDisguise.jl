@@ -1,0 +1,100 @@
+{
+  "creator": "Yosys 0.36 (git sha1 8f07a0d8404, clang 14.0.0-1ubuntu1.1 -fPIC -Os)",
+  "modules": {
+    "lut_loop": {
+      "attributes": {
+        "STRUCTURAL_NETLIST": "yes",
+        "ECO_CHECKSUM": "c90cfdf4",
+        "hdlname": "\\lut_loop",
+        "top": "00000000000000000000000000000001",
+        "src": "simple-designs/lut_loop/outputs_vivado_xilinx_7/netlist.v:18.1-41.10"
+      },
+      "ports": {
+        "en": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "en_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/lut_loop/outputs_vivado_xilinx_7/netlist.v:29.8-31.21"
+          },
+          "connections": {
+            "I": [ 2 ],
+            "O": [ 4 ]
+          }
+        },
+        "q_OBUF_inst": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/lut_loop/outputs_vivado_xilinx_7/netlist.v:32.8-34.15"
+          },
+          "connections": {
+            "I": [ 5 ],
+            "O": [ 3 ]
+          }
+        },
+        "q_OBUF_inst_i_1": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/lut_loop/outputs_vivado_xilinx_7/netlist.v:37.5-40.20"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "I1": [ 5 ],
+            "O": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "en": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "simple-designs/lut_loop/outputs_vivado_xilinx_7/netlist.v:21.9-21.11"
+          }
+        },
+        "en_IBUF": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "simple-designs/lut_loop/outputs_vivado_xilinx_7/netlist.v:25.8-25.15"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "simple-designs/lut_loop/outputs_vivado_xilinx_7/netlist.v:22.10-22.11"
+          }
+        },
+        "q_OBUF": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "simple-designs/lut_loop/outputs_vivado_xilinx_7/netlist.v:27.8-27.14"
+          }
+        }
+      }
+    }
+  }
+}

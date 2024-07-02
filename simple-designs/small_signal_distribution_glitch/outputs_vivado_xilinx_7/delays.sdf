@@ -1,0 +1,209 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "signal_distribution")
+(DATE "Tue Sep  5 16:12:06 2023")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2020.2.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[0\]\.GEN_2\[0\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[0\]\.GEN_2\[1\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[0\]\.GEN_2\[2\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[0\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (100.0:125.0:125.0) (100.0:125.0:125.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[1\]\.GEN_2\[0\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (94.0:118.0:118.0) (94.0:118.0:118.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[1\]\.GEN_2\[1\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (92.0:114.0:114.0) (92.0:114.0:114.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[1\]\.GEN_2\[2\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[1\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[2\]\.GEN_2\[0\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[2\]\.GEN_2\[1\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (87.0:108.0:108.0) (87.0:108.0:108.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[2\]\.GEN_2\[2\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (87.0:108.0:108.0) (87.0:108.0:108.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE GEN_1\[2\]\.LUT1_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (97.0:121.0:121.0) (97.0:121.0:121.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE q_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2235.3:2403.3:2403.3) (2235.3:2403.3:2403.3))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE q_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I4 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I3 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I2 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE q_OBUF_inst_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I2 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE x_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (809.5:940.8:940.8) (809.5:940.8:940.8))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "signal_distribution")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT GEN_1\[0\]\.GEN_2\[0\]\.LUT1_inst/O q_OBUF_inst_i_1/I0 (628.9:768.9:768.9) (628.9:768.9:768.9))
+      (INTERCONNECT GEN_1\[0\]\.GEN_2\[1\]\.LUT1_inst/O q_OBUF_inst_i_1/I3 (102.8:121.8:121.8) (102.8:121.8:121.8))
+      (INTERCONNECT GEN_1\[0\]\.GEN_2\[2\]\.LUT1_inst/O q_OBUF_inst_i_1/I2 (450.1:554.1:554.1) (450.1:554.1:554.1))
+      (INTERCONNECT GEN_1\[0\]\.LUT1_inst/O GEN_1\[0\]\.GEN_2\[0\]\.LUT1_inst/I0 (610.4:748.4:748.4) (610.4:748.4:748.4))
+      (INTERCONNECT GEN_1\[0\]\.LUT1_inst/O GEN_1\[0\]\.GEN_2\[1\]\.LUT1_inst/I0 (349.2:420.2:420.2) (349.2:420.2:420.2))
+      (INTERCONNECT GEN_1\[0\]\.LUT1_inst/O GEN_1\[0\]\.GEN_2\[2\]\.LUT1_inst/I0 (344.7:415.7:415.7) (344.7:415.7:415.7))
+      (INTERCONNECT GEN_1\[1\]\.GEN_2\[0\]\.LUT1_inst/O q_OBUF_inst_i_1/I5 (311.2:378.2:378.2) (311.2:378.2:378.2))
+      (INTERCONNECT GEN_1\[1\]\.GEN_2\[1\]\.LUT1_inst/O q_OBUF_inst_i_1/I4 (429.2:527.2:527.2) (429.2:527.2:527.2))
+      (INTERCONNECT GEN_1\[1\]\.GEN_2\[2\]\.LUT1_inst/O q_OBUF_inst_i_2/I1 (278.7:342.7:342.7) (278.7:342.7:342.7))
+      (INTERCONNECT GEN_1\[1\]\.LUT1_inst/O GEN_1\[1\]\.GEN_2\[0\]\.LUT1_inst/I0 (463.2:566.2:566.2) (463.2:566.2:566.2))
+      (INTERCONNECT GEN_1\[1\]\.LUT1_inst/O GEN_1\[1\]\.GEN_2\[1\]\.LUT1_inst/I0 (460.2:563.2:563.2) (460.2:563.2:563.2))
+      (INTERCONNECT GEN_1\[1\]\.LUT1_inst/O GEN_1\[1\]\.GEN_2\[2\]\.LUT1_inst/I0 (576.0:702.0:702.0) (576.0:702.0:702.0))
+      (INTERCONNECT GEN_1\[2\]\.GEN_2\[0\]\.LUT1_inst/O q_OBUF_inst_i_2/I0 (511.4:622.4:622.4) (511.4:622.4:622.4))
+      (INTERCONNECT GEN_1\[2\]\.GEN_2\[1\]\.LUT1_inst/O q_OBUF_inst_i_2/I3 (762.9:932.9:932.9) (762.9:932.9:932.9))
+      (INTERCONNECT GEN_1\[2\]\.GEN_2\[2\]\.LUT1_inst/O q_OBUF_inst_i_2/I2 (581.5:719.5:719.5) (581.5:719.5:719.5))
+      (INTERCONNECT GEN_1\[2\]\.LUT1_inst/O GEN_1\[2\]\.GEN_2\[0\]\.LUT1_inst/I0 (604.7:741.7:741.7) (604.7:741.7:741.7))
+      (INTERCONNECT GEN_1\[2\]\.LUT1_inst/O GEN_1\[2\]\.GEN_2\[1\]\.LUT1_inst/I0 (324.7:391.7:391.7) (324.7:391.7:391.7))
+      (INTERCONNECT GEN_1\[2\]\.LUT1_inst/O GEN_1\[2\]\.GEN_2\[2\]\.LUT1_inst/I0 (326.7:395.7:395.7) (326.7:395.7:395.7))
+      (INTERCONNECT q_OBUF_inst_i_1/O q_OBUF_inst/I (1237.3:1366.3:1366.3) (1237.3:1366.3:1366.3))
+      (INTERCONNECT q_OBUF_inst_i_2/O q_OBUF_inst_i_1/I1 (327.3:401.3:401.3) (327.3:401.3:401.3))
+      (INTERCONNECT x_IBUF_inst/O GEN_1\[0\]\.LUT1_inst/I0 (727.3:868.3:868.3) (727.3:868.3:868.3))
+      (INTERCONNECT x_IBUF_inst/O GEN_1\[1\]\.LUT1_inst/I0 (846.3:1017.3:1017.3) (846.3:1017.3:1017.3))
+      (INTERCONNECT x_IBUF_inst/O GEN_1\[2\]\.LUT1_inst/I0 (846.3:1017.3:1017.3) (846.3:1017.3:1017.3))
+      )
+    )
+)
+)

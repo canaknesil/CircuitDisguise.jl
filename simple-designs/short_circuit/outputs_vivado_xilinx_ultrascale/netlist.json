@@ -1,0 +1,171 @@
+{
+  "creator": "Yosys 0.39 (git sha1 00338082b00, g++ 9.4.0-1ubuntu1~20.04.2 -fPIC -Os)",
+  "modules": {
+    "top": {
+      "attributes": {
+        "STRUCTURAL_NETLIST": "yes",
+        "hdlname": "top",
+        "top": "00000000000000000000000000000001",
+        "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:18.1-40.10"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "c": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "a_IBUF_inst.IBUFCTRL_INST": {
+          "hide_name": 0,
+          "type": "IBUFCTRL",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:31.8-33.20|/home/canaknesil/Documents/repos/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_ultrascale.v:34.13-35.13"
+          },
+          "connections": {
+            "I": [ 5 ],
+            "O": [ 6 ]
+          }
+        },
+        "a_IBUF_inst.INBUF_INST": {
+          "hide_name": 0,
+          "type": "INBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:31.8-33.20|/home/canaknesil/Documents/repos/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_ultrascale.v:32.10-33.14"
+          },
+          "connections": {
+            "O": [ 5 ],
+            "PAD": [ 2 ]
+          }
+        },
+        "b_IBUF_inst.IBUFCTRL_INST": {
+          "hide_name": 0,
+          "type": "IBUFCTRL",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:34.8-36.20|/home/canaknesil/Documents/repos/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_ultrascale.v:34.13-35.13"
+          },
+          "connections": {
+            "I": [ 7 ],
+            "O": [ 6 ]
+          }
+        },
+        "b_IBUF_inst.INBUF_INST": {
+          "hide_name": 0,
+          "type": "INBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:34.8-36.20|/home/canaknesil/Documents/repos/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_ultrascale.v:32.10-33.14"
+          },
+          "connections": {
+            "O": [ 7 ],
+            "PAD": [ 3 ]
+          }
+        },
+        "c_OBUF_inst": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:37.8-39.15"
+          },
+          "connections": {
+            "I": [ 6 ],
+            "O": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:22.9-22.10"
+          }
+        },
+        "a_IBUF_inst.A": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:31.8-33.20|/home/canaknesil/Documents/repos/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_ultrascale.v:31.9-31.10"
+          }
+        },
+        "a_IBUF_inst.I": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:31.8-33.20|/home/canaknesil/Documents/repos/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_ultrascale.v:29.29-29.30"
+          }
+        },
+        "a_IBUF_inst.O": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:31.8-33.20|/home/canaknesil/Documents/repos/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_ultrascale.v:29.20-29.21"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:23.9-23.10"
+          }
+        },
+        "b_IBUF_inst.A": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:34.8-36.20|/home/canaknesil/Documents/repos/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_ultrascale.v:31.9-31.10"
+          }
+        },
+        "b_IBUF_inst.I": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:34.8-36.20|/home/canaknesil/Documents/repos/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_ultrascale.v:29.29-29.30"
+          }
+        },
+        "b_IBUF_inst.O": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:34.8-36.20|/home/canaknesil/Documents/repos/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_ultrascale.v:29.20-29.21"
+          }
+        },
+        "c": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:24.10-24.11"
+          }
+        },
+        "c_OBUF": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "./simple-designs/short_circuit/outputs_vivado_xilinx_ultrascale/netlist.v:29.8-29.14"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "creator": "Yosys 0.36 (git sha1 8f07a0d8404, clang 14.0.0-1ubuntu1.1 -fPIC -Os)",
+  "modules": {
+    "self_triggering_ff": {
+      "attributes": {
+        "STRUCTURAL_NETLIST": "yes",
+        "ECO_CHECKSUM": "48939534",
+        "hdlname": "\\self_triggering_ff",
+        "top": "00000000000000000000000000000001",
+        "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:18.1-76.10"
+      },
+      "ports": {
+        "en": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "reset": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "VCC": {
+          "hide_name": 0,
+          "type": "VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:37.7-38.24"
+          },
+          "connections": {
+            "P": [ 5 ]
+          }
+        },
+        "a_i_1": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:41.5-43.20"
+          },
+          "connections": {
+            "I0": [ 6 ],
+            "O": [ 7 ]
+          }
+        },
+        "a_reg": {
+          "hide_name": 0,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "0"
+          },
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "KEEP": "yes",
+            "equivalent_register_removal": "no",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:49.5-54.15"
+          },
+          "connections": {
+            "C": [ 8 ],
+            "CE": [ 5 ],
+            "CLR": [ 9 ],
+            "D": [ 7 ],
+            "Q": [ 6 ]
+          }
+        },
+        "b_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:57.5-59.15"
+          },
+          "connections": {
+            "I0": [ 6 ],
+            "O": [ 10 ]
+          }
+        },
+        "clk_inferred_i_1": {
+          "hide_name": 0,
+          "type": "LUT3",
+          "parameters": {
+            "INIT": "10010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:62.5-66.17"
+          },
+          "connections": {
+            "I0": [ 10 ],
+            "I1": [ 6 ],
+            "I2": [ 11 ],
+            "O": [ 8 ]
+          }
+        },
+        "en_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:67.8-69.21"
+          },
+          "connections": {
+            "I": [ 2 ],
+            "O": [ 11 ]
+          }
+        },
+        "q_OBUF_inst": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:70.8-72.15"
+          },
+          "connections": {
+            "I": [ 6 ],
+            "O": [ 4 ]
+          }
+        },
+        "reset_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:73.8-75.24"
+          },
+          "connections": {
+            "I": [ 3 ],
+            "O": [ 9 ]
+          }
+        }
+      },
+      "netnames": {
+        "<const1>": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:26.8-26.17"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:27.25-27.26"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:28.25-28.26"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:29.25-29.28"
+          }
+        },
+        "en": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:22.9-22.11"
+          }
+        },
+        "en_IBUF": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:31.8-31.15"
+          }
+        },
+        "p_1_in": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:32.8-32.14"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:24.10-24.11"
+          }
+        },
+        "reset": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:23.9-23.14"
+          }
+        },
+        "reset_IBUF": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "simple-designs/self_triggering_ff/outputs_vivado_xilinx_7/netlist.v:35.8-35.18"
+          }
+        }
+      }
+    }
+  }
+}

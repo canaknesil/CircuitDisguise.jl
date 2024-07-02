@@ -1,0 +1,419 @@
+{
+  "creator": "Yosys 0.36 (git sha1 8f07a0d8404, clang 14.0.0-1ubuntu1.1 -fPIC -Os)",
+  "modules": {
+    "top": {
+      "attributes": {
+        "STRUCTURAL_NETLIST": "yes",
+        "ECO_CHECKSUM": "85fa5358",
+        "hdlname": "\\top",
+        "top": "00000000000000000000000000000001",
+        "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:67.1-143.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "reset": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "CD.VCC": {
+          "hide_name": 0,
+          "type": "VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "hdlname": "CD VCC",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:32.7-33.24"
+          },
+          "connections": {
+            "P": [ 5 ]
+          }
+        },
+        "CD.count[0]_i_1": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "SOFT_HLUTNM": "soft_lutpair0",
+            "hdlname": "CD count[0]_i_1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:37.5-39.20"
+          },
+          "connections": {
+            "I0": [ 6 ],
+            "O": [ 7 ]
+          }
+        },
+        "CD.count_reg[0]": {
+          "hide_name": 0,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "0"
+          },
+          "attributes": {
+            "hdlname": "CD count_reg[0]",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:42.5-47.19"
+          },
+          "connections": {
+            "C": [ 8 ],
+            "CE": [ 5 ],
+            "CLR": [ 9 ],
+            "D": [ 7 ],
+            "Q": [ 6 ]
+          }
+        },
+        "CD.new_clk_i_1": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "0110"
+          },
+          "attributes": {
+            "SOFT_HLUTNM": "soft_lutpair0",
+            "hdlname": "CD new_clk_i_1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:51.5-54.29"
+          },
+          "connections": {
+            "I0": [ 6 ],
+            "I1": [ 10 ],
+            "O": [ 11 ]
+          }
+        },
+        "CD.new_clk_reg": {
+          "hide_name": 0,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "0"
+          },
+          "attributes": {
+            "hdlname": "CD new_clk_reg",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:57.5-62.21"
+          },
+          "connections": {
+            "C": [ 8 ],
+            "CE": [ 5 ],
+            "CLR": [ 9 ],
+            "D": [ 11 ],
+            "Q": [ 10 ]
+          }
+        },
+        "VCC": {
+          "hide_name": 0,
+          "type": "VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:93.7-94.24"
+          },
+          "connections": {
+            "P": [ 12 ]
+          }
+        },
+        "a_i_1": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:97.5-99.23"
+          },
+          "connections": {
+            "I0": [ 13 ],
+            "O": [ 14 ]
+          }
+        },
+        "a_reg": {
+          "hide_name": 0,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "0"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:102.5-107.15"
+          },
+          "connections": {
+            "C": [ 8 ],
+            "CE": [ 12 ],
+            "CLR": [ 9 ],
+            "D": [ 14 ],
+            "Q": [ 13 ]
+          }
+        },
+        "b_i_1": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:110.5-112.23"
+          },
+          "connections": {
+            "I0": [ 15 ],
+            "O": [ 16 ]
+          }
+        },
+        "b_reg": {
+          "hide_name": 0,
+          "type": "FDCE",
+          "parameters": {
+            "INIT": "0"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:115.5-120.15"
+          },
+          "connections": {
+            "C": [ 10 ],
+            "CE": [ 12 ],
+            "CLR": [ 9 ],
+            "D": [ 16 ],
+            "Q": [ 15 ]
+          }
+        },
+        "clk_IBUF_BUFG_inst": {
+          "hide_name": 0,
+          "type": "BUFG",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:121.8-123.27"
+          },
+          "connections": {
+            "I": [ 17 ],
+            "O": [ 8 ]
+          }
+        },
+        "clk_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "CCIO_EN": "TRUE"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:126.5-128.22"
+          },
+          "connections": {
+            "I": [ 2 ],
+            "O": [ 17 ]
+          }
+        },
+        "q_OBUF_inst": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:129.8-131.15"
+          },
+          "connections": {
+            "I": [ 18 ],
+            "O": [ 4 ]
+          }
+        },
+        "q_OBUF_inst_i_1": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "1000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:134.5-137.20"
+          },
+          "connections": {
+            "I0": [ 13 ],
+            "I1": [ 15 ],
+            "O": [ 18 ]
+          }
+        },
+        "reset_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "CCIO_EN": "TRUE"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:140.5-142.24"
+          },
+          "connections": {
+            "I": [ 3 ],
+            "O": [ 9 ]
+          }
+        }
+      },
+      "netnames": {
+        "<const1>": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:75.8-75.17"
+          }
+        },
+        "CD.<const1>": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "hdlname": "CD <const1>",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:24.8-24.17"
+          }
+        },
+        "CD.clk_IBUF_BUFG": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "hdlname": "CD clk_IBUF_BUFG",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:21.9-21.22"
+          }
+        },
+        "CD.count": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "hdlname": "CD count",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:26.8-26.13"
+          }
+        },
+        "CD.new_clk": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "hdlname": "CD new_clk",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:20.10-20.17"
+          }
+        },
+        "CD.new_clk_i_1_n_0": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "hdlname": "CD new_clk_i_1_n_0",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:28.8-28.23"
+          }
+        },
+        "CD.p_0_in": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "hdlname": "CD p_0_in",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:29.8-29.14"
+          }
+        },
+        "CD.reset_IBUF": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "hdlname": "CD reset_IBUF",
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:89.17-92.33|simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:22.9-22.19"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:76.8-76.9"
+          }
+        },
+        "a_i_1_n_0": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:77.8-77.17"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:78.8-78.9"
+          }
+        },
+        "b_i_1_n_0": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:79.8-79.17"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:71.9-71.12"
+          }
+        },
+        "clk_IBUF": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:81.8-81.16"
+          }
+        },
+        "clk_IBUF_BUFG": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:82.8-82.21"
+          }
+        },
+        "new_clk": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:83.8-83.15"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:73.10-73.11"
+          }
+        },
+        "q_OBUF": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:85.8-85.14"
+          }
+        },
+        "reset": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:72.9-72.14"
+          }
+        },
+        "reset_IBUF": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "simple-designs/internal_clock_generation/outputs_vivado_xilinx_7/netlist.v:87.8-87.18"
+          }
+        }
+      }
+    }
+  }
+}

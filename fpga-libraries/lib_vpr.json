@@ -1,0 +1,2828 @@
+{
+  "creator": "Yosys 0.30 (git sha1 f7a8284c7b0, gcc 9.4.0-1ubuntu1~20.04.1 -fPIC -Os)",
+  "modules": {
+    "DFF": {
+      "attributes": {
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "fpga-libraries/lib_vpr.v:148.1-169.10"
+      },
+      "parameter_default_values": {
+        "INITIAL_VALUE": "0"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$procdff$122": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:166.5-168.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 3 ],
+            "Q": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\Q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:166.5-168.8"
+          }
+        },
+        "$1\\Q[0:0]": {
+          "hide_name": 1,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:152.11-152.12"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "init": "0",
+            "src": "fpga-libraries/lib_vpr.v:153.16-153.17"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:151.11-151.14"
+          }
+        }
+      }
+    },
+    "LUT_K": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "fpga-libraries/lib_vpr.v:126.1-145.10"
+      },
+      "parameter_default_values": {
+        "K": "00000000000000000000000000000001",
+        "LUT_MASK": "00"
+      },
+      "ports": {
+        "in": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "out": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "$shiftx$fpga-libraries/lib_vpr.v:0$1": {
+          "hide_name": 1,
+          "type": "$shiftx",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0" ],
+            "B": [ 2 ],
+            "Y": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "$shiftx$fpga-libraries/lib_vpr.v:0$1_Y": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "in": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:135.19-135.21"
+          }
+        },
+        "out": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:136.12-136.15"
+          }
+        }
+      }
+    },
+    "adder": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "fpga-libraries/lib_vpr.v:199.1-219.10"
+      },
+      "parameter_default_values": {
+        "WIDTH": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "cin": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "cout": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "sumout": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$add$fpga-libraries/lib_vpr.v:217$8": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:217.28-217.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 7, 8 ]
+          }
+        },
+        "$add$fpga-libraries/lib_vpr.v:217$9": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:217.28-217.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7, 8 ],
+            "B": [ 4 ],
+            "Y": [ 6, 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "$add$fpga-libraries/lib_vpr.v:217$8_Y": {
+          "hide_name": 1,
+          "bits": [ 7, 8 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:217.28-217.33"
+          }
+        },
+        "$add$fpga-libraries/lib_vpr.v:217$9_Y": {
+          "hide_name": 1,
+          "bits": [ 6, 5 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:217.28-217.39"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:202.23-202.24"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:203.23-203.24"
+          }
+        },
+        "cin": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:204.11-204.14"
+          }
+        },
+        "cout": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:205.12-205.16"
+          }
+        },
+        "sumout": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:206.24-206.30"
+          }
+        }
+      }
+    },
+    "dual_port_ram": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "dynports": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "fpga-libraries/lib_vpr.v:278.1-329.10"
+      },
+      "parameter_default_values": {
+        "ADDR_WIDTH": "00000000000000000000000000000001",
+        "DATA_WIDTH": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "addr1": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "addr2": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "data1": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "data2": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "we1": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "we2": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "out1": {
+          "direction": "output",
+          "bits": [ 9 ]
+        },
+        "out2": {
+          "direction": "output",
+          "bits": [ 10 ]
+        }
+      },
+      "cells": {
+        "$procdff$123": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "Q": [ 12 ]
+          }
+        },
+        "$procdff$124": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "Q": [ 14 ]
+          }
+        },
+        "$procdff$125": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 15 ],
+            "Q": [ 9 ]
+          }
+        },
+        "$procdff$126": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 16 ]
+          }
+        },
+        "$procdff$127": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 17 ]
+          }
+        },
+        "$procdff$128": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 18 ]
+          }
+        },
+        "$procdff$129": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 19 ]
+          }
+        },
+        "$procdff$130": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 20 ],
+            "Q": [ 12 ]
+          }
+        },
+        "$procdff$131": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 21 ],
+            "Q": [ 14 ]
+          }
+        },
+        "$procdff$132": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 22 ],
+            "Q": [ 10 ]
+          }
+        },
+        "$procdff$133": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 23 ]
+          }
+        },
+        "$procdff$134": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 24 ]
+          }
+        },
+        "$procdff$135": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 25 ]
+          }
+        },
+        "$procdff$136": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 26 ]
+          }
+        },
+        "$procmux$41": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 13, 11 ],
+            "S": [ 3, 27 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$procmux$43_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$procmux$45": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 12, 5 ],
+            "S": [ 3, 28 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$procmux$47_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$procmux$48": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:316.12-316.15|fpga-libraries/lib_vpr.v:316.9-318.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 29 ],
+            "S": [ 7 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$procmux$51": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 5, 14 ],
+            "S": [ 3, 31 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$procmux$53_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$procmux$54": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:316.12-316.15|fpga-libraries/lib_vpr.v:316.9-318.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 32 ],
+            "S": [ 7 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$procmux$57": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:316.12-316.15|fpga-libraries/lib_vpr.v:316.9-318.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 33 ],
+            "S": [ 7 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$procmux$60": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:316.12-316.15|fpga-libraries/lib_vpr.v:316.9-318.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 30 ],
+            "S": [ 7 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$procmux$63": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:316.12-316.15|fpga-libraries/lib_vpr.v:316.9-318.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 3 ],
+            "S": [ 7 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$procmux$66": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:316.12-316.15|fpga-libraries/lib_vpr.v:316.9-318.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 5 ],
+            "S": [ 7 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$procmux$68": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 21, 20 ],
+            "S": [ 4, 36 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$procmux$70_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$procmux$72": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 12, 6 ],
+            "S": [ 4, 37 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$procmux$74_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$procmux$75": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:323.12-323.15|fpga-libraries/lib_vpr.v:323.9-325.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 38 ],
+            "S": [ 8 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$procmux$78": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 6, 14 ],
+            "S": [ 4, 40 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$procmux$80_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$procmux$81": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:323.12-323.15|fpga-libraries/lib_vpr.v:323.9-325.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 41 ],
+            "S": [ 8 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$procmux$84": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:323.12-323.15|fpga-libraries/lib_vpr.v:323.9-325.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 42 ],
+            "S": [ 8 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$procmux$87": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:323.12-323.15|fpga-libraries/lib_vpr.v:323.9-325.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 39 ],
+            "S": [ 8 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$procmux$90": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:323.12-323.15|fpga-libraries/lib_vpr.v:323.9-325.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 23 ],
+            "B": [ 4 ],
+            "S": [ 8 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$procmux$93": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:323.12-323.15|fpga-libraries/lib_vpr.v:323.9-325.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 6 ],
+            "S": [ 8 ],
+            "Y": [ 44 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:319$22_ADDR[0:0]$28": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$0$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:319$22_DATA[0:0]$29": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$0$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:326$24_ADDR[0:0]$36": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$0$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:326$24_DATA[0:0]$37": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$0$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:317$21_ADDR[0:0]$26": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$0$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:317$21_DATA[0:0]$27": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$0$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:324$23_ADDR[0:0]$34": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$0$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:324$23_DATA[0:0]$35": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$0\\Mem[0][0:0]": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$0\\Mem[1][0:0]": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$0\\out1[0:0]": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$0\\out2[0:0]": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$1$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:319$22_DATA[0:0]$32": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$1$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:326$24_DATA[0:0]$40": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$1$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:317$21_ADDR[0:0]$30": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$1$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:317$21_DATA[0:0]$31": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$1$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:324$23_ADDR[0:0]$38": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$1$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:324$23_DATA[0:0]$39": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$1\\Mem[0][0:0]": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$1\\Mem[1][0:0]": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$2\\Mem[0][0:0]": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$2\\Mem[1][0:0]": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:315.5-320.8"
+          }
+        },
+        "$3\\Mem[0][0:0]": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$3\\Mem[1][0:0]": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$4\\Mem[0][0:0]": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$4\\Mem[1][0:0]": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$5\\Mem[0][0:0]": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$5\\Mem[1][0:0]": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:322.5-327.8"
+          }
+        },
+        "$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:319$22_ADDR": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:319$22_DATA": {
+          "hide_name": 1,
+          "bits": [ 19 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:326$24_ADDR": {
+          "hide_name": 1,
+          "bits": [ 25 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:326$24_DATA": {
+          "hide_name": 1,
+          "bits": [ 26 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:317$21_ADDR": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:317$21_DATA": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:324$23_ADDR": {
+          "hide_name": 1,
+          "bits": [ 23 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:324$23_DATA": {
+          "hide_name": 1,
+          "bits": [ 24 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$procmux$41_Y": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+          }
+        },
+        "$procmux$42_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$43_CMP": {
+          "hide_name": 1,
+          "bits": [ 27 ],
+          "attributes": {
+          }
+        },
+        "$procmux$45_Y": {
+          "hide_name": 1,
+          "bits": [ 29 ],
+          "attributes": {
+          }
+        },
+        "$procmux$46_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$47_CMP": {
+          "hide_name": 1,
+          "bits": [ 28 ],
+          "attributes": {
+          }
+        },
+        "$procmux$48_Y": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+          }
+        },
+        "$procmux$49_CMP": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$procmux$51_Y": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+          }
+        },
+        "$procmux$52_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$53_CMP": {
+          "hide_name": 1,
+          "bits": [ 31 ],
+          "attributes": {
+          }
+        },
+        "$procmux$54_Y": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+          }
+        },
+        "$procmux$55_CMP": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$procmux$57_Y": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "$procmux$58_CMP": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$procmux$60_Y": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+          }
+        },
+        "$procmux$61_CMP": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$procmux$63_Y": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+          }
+        },
+        "$procmux$64_CMP": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$procmux$66_Y": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+          }
+        },
+        "$procmux$67_CMP": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$procmux$68_Y": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+          }
+        },
+        "$procmux$69_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$70_CMP": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+          }
+        },
+        "$procmux$72_Y": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+          }
+        },
+        "$procmux$73_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$74_CMP": {
+          "hide_name": 1,
+          "bits": [ 37 ],
+          "attributes": {
+          }
+        },
+        "$procmux$75_Y": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+          }
+        },
+        "$procmux$76_CMP": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "$procmux$78_Y": {
+          "hide_name": 1,
+          "bits": [ 41 ],
+          "attributes": {
+          }
+        },
+        "$procmux$79_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$80_CMP": {
+          "hide_name": 1,
+          "bits": [ 40 ],
+          "attributes": {
+          }
+        },
+        "$procmux$81_Y": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+          }
+        },
+        "$procmux$82_CMP": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "$procmux$84_Y": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+          }
+        },
+        "$procmux$85_CMP": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "$procmux$87_Y": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+          }
+        },
+        "$procmux$88_CMP": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "$procmux$90_Y": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+          }
+        },
+        "$procmux$91_CMP": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "$procmux$93_Y": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+          }
+        },
+        "$procmux$94_CMP": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "Mem[0]": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:296.26-296.29"
+          }
+        },
+        "Mem[1]": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:296.26-296.29"
+          }
+        },
+        "addr1": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:284.28-284.33"
+          }
+        },
+        "addr2": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:285.28-285.33"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:282.11-282.14"
+          }
+        },
+        "data1": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:286.28-286.33"
+          }
+        },
+        "data2": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:287.28-287.33"
+          }
+        },
+        "out1": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:290.33-290.37"
+          }
+        },
+        "out2": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:291.33-291.37"
+          }
+        },
+        "we1": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:288.11-288.14"
+          }
+        },
+        "we2": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:289.11-289.14"
+          }
+        }
+      }
+    },
+    "fpga_interconnect": {
+      "attributes": {
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "fpga-libraries/lib_vpr.v:172.1-183.10"
+      },
+      "ports": {
+        "datain": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "dataout": {
+          "direction": "output",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "datain": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:173.11-173.17"
+          }
+        },
+        "dataout": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:174.12-174.19"
+          }
+        }
+      }
+    },
+    "multiply": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "fpga-libraries/lib_vpr.v:222.1-238.10"
+      },
+      "parameter_default_values": {
+        "WIDTH": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "out": {
+          "direction": "output",
+          "bits": [ 4, 5 ]
+        }
+      },
+      "cells": {
+        "$mul$fpga-libraries/lib_vpr.v:236$10": {
+          "hide_name": 1,
+          "type": "$mul",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:236.18-236.23"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4, 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "$mul$fpga-libraries/lib_vpr.v:236$10_Y": {
+          "hide_name": 1,
+          "bits": [ 4, 5 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:236.18-236.23"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:226.23-226.24"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:227.23-227.24"
+          }
+        },
+        "out": {
+          "hide_name": 0,
+          "bits": [ 4, 5 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:228.26-228.29"
+          }
+        }
+      }
+    },
+    "mux": {
+      "attributes": {
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "fpga-libraries/lib_vpr.v:187.1-196.10"
+      },
+      "ports": {
+        "select": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "x": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "y": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "z": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$and$fpga-libraries/lib_vpr.v:194$5": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:194.17-194.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 6 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$and$fpga-libraries/lib_vpr.v:194$6": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:194.33-194.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 2 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$not$fpga-libraries/lib_vpr.v:194$4": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:194.21-194.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$or$fpga-libraries/lib_vpr.v:194$7": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:194.16-194.44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 8 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$fpga-libraries/lib_vpr.v:194$5_Y": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:194.17-194.28"
+          }
+        },
+        "$and$fpga-libraries/lib_vpr.v:194$6_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:194.33-194.43"
+          }
+        },
+        "$not$fpga-libraries/lib_vpr.v:194$4_Y": {
+          "hide_name": 1,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:194.21-194.28"
+          }
+        },
+        "$or$fpga-libraries/lib_vpr.v:194$7_Y": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:194.16-194.44"
+          }
+        },
+        "select": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:188.11-188.17"
+          }
+        },
+        "x": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:189.11-189.12"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:190.11-190.12"
+          }
+        },
+        "z": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:191.12-191.13"
+          }
+        }
+      }
+    },
+    "single_port_ram": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "dynports": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "fpga-libraries/lib_vpr.v:242.1-274.10"
+      },
+      "parameter_default_values": {
+        "ADDR_WIDTH": "00000000000000000000000000000001",
+        "DATA_WIDTH": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "addr": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "data": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "we": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "out": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$procdff$137": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "Q": [ 6 ]
+          }
+        },
+        "$procdff$138": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "Q": [ 9 ]
+          }
+        },
+        "$procdff$139": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "Q": [ 11 ]
+          }
+        },
+        "$procdff$140": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 12 ]
+          }
+        },
+        "$procdff$141": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 13 ]
+          }
+        },
+        "$procdff$142": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 14 ]
+          }
+        },
+        "$procdff$143": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 15 ]
+          }
+        },
+        "$procmux$101_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$procmux$102": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:268.12-268.14|fpga-libraries/lib_vpr.v:268.9-270.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 17 ],
+            "S": [ 5 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$procmux$105": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 4, 11 ],
+            "S": [ 3, 19 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$procmux$107_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$procmux$108": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:268.12-268.14|fpga-libraries/lib_vpr.v:268.9-270.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 20 ],
+            "S": [ 5 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$procmux$111": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:268.12-268.14|fpga-libraries/lib_vpr.v:268.9-270.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 21 ],
+            "S": [ 5 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$procmux$114": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:268.12-268.14|fpga-libraries/lib_vpr.v:268.9-270.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 18 ],
+            "S": [ 5 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$procmux$117": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:268.12-268.14|fpga-libraries/lib_vpr.v:268.9-270.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 3 ],
+            "S": [ 5 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$procmux$120": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:268.12-268.14|fpga-libraries/lib_vpr.v:268.9-270.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "B": [ 4 ],
+            "S": [ 5 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$procmux$95": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 10, 8 ],
+            "S": [ 3, 24 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$procmux$97_CMP0": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$procmux$99": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 9, 4 ],
+            "S": [ 3, 16 ],
+            "Y": [ 17 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:271$12_ADDR[0:0]$16": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$0$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:271$12_DATA[0:0]$17": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$0$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:269$11_ADDR[0:0]$14": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$0$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:269$11_DATA[0:0]$15": {
+          "hide_name": 1,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$0\\Mem[0][0:0]": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$0\\Mem[1][0:0]": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$0\\out[0:0]": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$1$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:271$12_DATA[0:0]$20": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$1$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:269$11_ADDR[0:0]$18": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$1$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:269$11_DATA[0:0]$19": {
+          "hide_name": 1,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$1\\Mem[0][0:0]": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$1\\Mem[1][0:0]": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$2\\Mem[0][0:0]": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$2\\Mem[1][0:0]": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:267.5-272.8"
+          }
+        },
+        "$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:271$12_ADDR": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$mem2reg_rd$\\Mem$fpga-libraries/lib_vpr.v:271$12_DATA": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:269$11_ADDR": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$mem2reg_wr$\\Mem$fpga-libraries/lib_vpr.v:269$11_DATA": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "fpga-libraries/lib_vpr.v:0.0-0.0"
+          }
+        },
+        "$procmux$100_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$101_CMP": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+          }
+        },
+        "$procmux$102_Y": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+          }
+        },
+        "$procmux$103_CMP": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "$procmux$105_Y": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+          }
+        },
+        "$procmux$106_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$107_CMP": {
+          "hide_name": 1,
+          "bits": [ 19 ],
+          "attributes": {
+          }
+        },
+        "$procmux$108_Y": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+          }
+        },
+        "$procmux$109_CMP": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "$procmux$111_Y": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+          }
+        },
+        "$procmux$112_CMP": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "$procmux$114_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "$procmux$115_CMP": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "$procmux$117_Y": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+          }
+        },
+        "$procmux$118_CMP": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "$procmux$120_Y": {
+          "hide_name": 1,
+          "bits": [ 23 ],
+          "attributes": {
+          }
+        },
+        "$procmux$121_CMP": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "$procmux$95_Y": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "$procmux$96_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$97_CMP": {
+          "hide_name": 1,
+          "bits": [ 24 ],
+          "attributes": {
+          }
+        },
+        "$procmux$99_Y": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+          }
+        },
+        "Mem[0]": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:255.26-255.29"
+          }
+        },
+        "Mem[1]": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:255.26-255.29"
+          }
+        },
+        "addr": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:247.28-247.32"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:246.11-246.14"
+          }
+        },
+        "data": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:248.28-248.32"
+          }
+        },
+        "out": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:250.33-250.36"
+          }
+        },
+        "we": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "fpga-libraries/lib_vpr.v:249.11-249.13"
+          }
+        }
+      }
+    }
+  }
+}

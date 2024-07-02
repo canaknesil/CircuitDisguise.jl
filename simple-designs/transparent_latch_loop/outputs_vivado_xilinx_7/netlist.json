@@ -1,0 +1,188 @@
+{
+  "creator": "Yosys 0.36 (git sha1 8f07a0d8404, clang 14.0.0-1ubuntu1.1 -fPIC -Os)",
+  "modules": {
+    "latch_loop": {
+      "attributes": {
+        "STRUCTURAL_NETLIST": "yes",
+        "ECO_CHECKSUM": "60e04341",
+        "hdlname": "\\latch_loop",
+        "top": "00000000000000000000000000000001",
+        "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:18.1-63.10"
+      },
+      "ports": {
+        "en": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "GND": {
+          "hide_name": 0,
+          "type": "GND",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:33.7-34.19"
+          },
+          "connections": {
+            "G": [ 4 ]
+          }
+        },
+        "VCC": {
+          "hide_name": 0,
+          "type": "VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:35.7-36.19"
+          },
+          "connections": {
+            "P": [ 5 ]
+          }
+        },
+        "a_reg": {
+          "hide_name": 0,
+          "type": "LDCE",
+          "parameters": {
+            "INIT": "0"
+          },
+          "attributes": {
+            "XILINX_LEGACY_PRIM": "LD",
+            "XILINX_TRANSFORM_PINMAP": "VCC:GE GND:CLR",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:41.5-46.20"
+          },
+          "connections": {
+            "CLR": [ 4 ],
+            "D": [ 6 ],
+            "G": [ 7 ],
+            "GE": [ 5 ],
+            "Q": [ 8 ]
+          }
+        },
+        "a_reg_i_1": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:49.5-51.27"
+          },
+          "connections": {
+            "I0": [ 8 ],
+            "O": [ 6 ]
+          }
+        },
+        "en_IBUF_BUFG_inst": {
+          "hide_name": 0,
+          "type": "BUFG",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:52.8-54.26"
+          },
+          "connections": {
+            "I": [ 9 ],
+            "O": [ 7 ]
+          }
+        },
+        "en_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "CCIO_EN": "TRUE"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:57.5-59.21"
+          },
+          "connections": {
+            "I": [ 2 ],
+            "O": [ 9 ]
+          }
+        },
+        "q_OBUF_inst": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:60.8-62.15"
+          },
+          "connections": {
+            "I": [ 8 ],
+            "O": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "GND_1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:24.8-24.13"
+          }
+        },
+        "VCC_1": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:25.8-25.13"
+          }
+        },
+        "a_reg_i_1_n_0": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:26.8-26.21"
+          }
+        },
+        "en": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:21.9-21.11"
+          }
+        },
+        "en_IBUF": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:28.8-28.15"
+          }
+        },
+        "en_IBUF_BUFG": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:29.8-29.20"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:22.10-22.11"
+          }
+        },
+        "q_OBUF": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "simple-designs/transparent_latch_loop/outputs_vivado_xilinx_7/netlist.v:31.8-31.14"
+          }
+        }
+      }
+    }
+  }
+}

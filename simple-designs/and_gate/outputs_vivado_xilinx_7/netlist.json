@@ -1,0 +1,132 @@
+{
+  "creator": "Yosys 0.39 (git sha1 00338082b00, g++ 9.4.0-1ubuntu1~20.04.2 -fPIC -Os)",
+  "modules": {
+    "circuit_disguise_top": {
+      "attributes": {
+        "STRUCTURAL_NETLIST": "yes",
+        "ECO_CHECKSUM": "1f88fa07",
+        "hdlname": "circuit_disguise_top",
+        "top": "00000000000000000000000000000001",
+        "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:17.1-47.10"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "c": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "a_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:32.8-34.20"
+          },
+          "connections": {
+            "I": [ 2 ],
+            "O": [ 5 ]
+          }
+        },
+        "b_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:35.8-37.20"
+          },
+          "connections": {
+            "I": [ 3 ],
+            "O": [ 6 ]
+          }
+        },
+        "c_OBUF_inst": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:38.8-40.15"
+          },
+          "connections": {
+            "I": [ 7 ],
+            "O": [ 4 ]
+          }
+        },
+        "c_OBUF_inst_i_1": {
+          "hide_name": 0,
+          "type": "LUT2",
+          "parameters": {
+            "INIT": "1000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:43.5-46.20"
+          },
+          "connections": {
+            "I0": [ 5 ],
+            "I1": [ 6 ],
+            "O": [ 7 ]
+          }
+        }
+      },
+      "netnames": {
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:21.9-21.10"
+          }
+        },
+        "a_IBUF": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:26.8-26.14"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:22.9-22.10"
+          }
+        },
+        "b_IBUF": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:28.8-28.14"
+          }
+        },
+        "c": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:23.10-23.11"
+          }
+        },
+        "c_OBUF": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "simple-designs/and_gate/outputs_vivado_xilinx_7/netlist.v:30.8-30.14"
+          }
+        }
+      }
+    }
+  }
+}

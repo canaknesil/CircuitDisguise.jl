@@ -1,0 +1,52 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "mux_loop")
+(DATE "Fri Aug 11 17:09:04 2023")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2020.2.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "MUXF8")
+  (INSTANCE MUXF8_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH S O (180.0:224.0:224.0) (180.0:224.0:224.0))
+      (IOPATH I1 O (63.0:79.0:79.0) (63.0:79.0:79.0))
+      (IOPATH I0 O (68.0:85.0:85.0) (68.0:85.0:85.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE en_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (795.7:926.9:926.9) (795.7:926.9:926.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE q_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2249.1:2417.2:2417.2) (2249.1:2417.2:2417.2))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "mux_loop")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT MUXF8_inst/O q_OBUF_inst/I (1399.2:1557.2:1557.2) (1399.2:1557.2:1557.2))
+      (INTERCONNECT MUXF8_inst/O MUXF8_inst/S (362.5:435.5:435.5) (362.5:435.5:435.5))
+      (INTERCONNECT en_IBUF_inst/O MUXF8_inst/I0 (843.8:1007.8:1007.8) (843.8:1007.8:1007.8))
+      )
+    )
+)
+)

@@ -1,0 +1,339 @@
+{
+  "creator": "Yosys 0.36 (git sha1 8f07a0d8404, clang 14.0.0-1ubuntu1.1 -fPIC -Os)",
+  "modules": {
+    "signal_distribution": {
+      "attributes": {
+        "STRUCTURAL_NETLIST": "yes",
+        "ECO_CHECKSUM": "65e29547",
+        "hdlname": "\\signal_distribution",
+        "top": "00000000000000000000000000000001",
+        "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:18.1-128.10"
+      },
+      "ports": {
+        "x": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "GEN_1[0].GEN_2[0].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:35.5-37.19"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "O": [ 5 ]
+          }
+        },
+        "GEN_1[0].GEN_2[1].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:41.5-43.19"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "O": [ 6 ]
+          }
+        },
+        "GEN_1[0].GEN_2[2].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:47.5-49.19"
+          },
+          "connections": {
+            "I0": [ 4 ],
+            "O": [ 7 ]
+          }
+        },
+        "GEN_1[0].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:53.5-55.19"
+          },
+          "connections": {
+            "I0": [ 8 ],
+            "O": [ 4 ]
+          }
+        },
+        "GEN_1[1].GEN_2[0].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:59.5-61.19"
+          },
+          "connections": {
+            "I0": [ 9 ],
+            "O": [ 10 ]
+          }
+        },
+        "GEN_1[1].GEN_2[1].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:65.5-67.19"
+          },
+          "connections": {
+            "I0": [ 9 ],
+            "O": [ 11 ]
+          }
+        },
+        "GEN_1[1].GEN_2[2].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:71.5-73.19"
+          },
+          "connections": {
+            "I0": [ 9 ],
+            "O": [ 12 ]
+          }
+        },
+        "GEN_1[1].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:77.5-79.19"
+          },
+          "connections": {
+            "I0": [ 8 ],
+            "O": [ 9 ]
+          }
+        },
+        "GEN_1[2].GEN_2[0].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:83.5-85.19"
+          },
+          "connections": {
+            "I0": [ 13 ],
+            "O": [ 14 ]
+          }
+        },
+        "GEN_1[2].GEN_2[1].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:89.5-91.19"
+          },
+          "connections": {
+            "I0": [ 13 ],
+            "O": [ 15 ]
+          }
+        },
+        "GEN_1[2].GEN_2[2].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:95.5-97.19"
+          },
+          "connections": {
+            "I0": [ 13 ],
+            "O": [ 16 ]
+          }
+        },
+        "GEN_1[2].LUT1_inst": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:101.5-103.19"
+          },
+          "connections": {
+            "I0": [ 8 ],
+            "O": [ 13 ]
+          }
+        },
+        "q_OBUF_inst": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:104.8-106.15"
+          },
+          "connections": {
+            "I": [ 17 ],
+            "O": [ 3 ]
+          }
+        },
+        "q_OBUF_inst_i_1": {
+          "hide_name": 0,
+          "type": "LUT6",
+          "parameters": {
+            "INIT": "0110100110010110100101100110100110010110011010010110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:109.5-116.20"
+          },
+          "connections": {
+            "I0": [ 5 ],
+            "I1": [ 18 ],
+            "I2": [ 7 ],
+            "I3": [ 6 ],
+            "I4": [ 11 ],
+            "I5": [ 10 ],
+            "O": [ 17 ]
+          }
+        },
+        "q_OBUF_inst_i_2": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0110100110010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:119.5-124.33"
+          },
+          "connections": {
+            "I0": [ 14 ],
+            "I1": [ 12 ],
+            "I2": [ 16 ],
+            "I3": [ 15 ],
+            "O": [ 18 ]
+          }
+        },
+        "x_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:125.8-127.20"
+          },
+          "connections": {
+            "I": [ 2 ],
+            "O": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "a2": {
+          "hide_name": 0,
+          "bits": [ 13, 9, 4 ],
+          "upto": 1,
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:24.30-24.32"
+          }
+        },
+        "b2": {
+          "hide_name": 0,
+          "bits": [ 16, 15, 14, 12, 11, 10, 7, 6, 5 ],
+          "upto": 1,
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:25.30-25.32"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:22.10-22.11"
+          }
+        },
+        "q_OBUF": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:27.8-27.14"
+          }
+        },
+        "q_OBUF_inst_i_2_n_0": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:28.8-28.27"
+          }
+        },
+        "x": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:21.9-21.10"
+          }
+        },
+        "x_IBUF": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "simple-designs/small_signal_distribution_glitch/outputs_vivado_xilinx_7/netlist.v:30.8-30.14"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "latch_loop")
+(DATE "Fri Aug 11 20:48:29 2023")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2022.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "LDCE")
+  (INSTANCE a_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (638.0:791.0:791.0))
+      (IOPATH G Q (357.0:443.0:443.0) (357.0:443.0:443.0))
+      (IOPATH GE Q (409.0:507.0:507.0) (409.0:507.0:507.0))
+      (IOPATH D Q (213.0:264.0:264.0) (213.0:264.0:264.0))
+    )
+  )
+    (TIMINGCHECK
+      (RECREM (negedge CLR) (negedge G) (326.0:404.0:404.0) (-248.0:-248.0:-248.0))
+      (SETUPHOLD (posedge D) (negedge G) (-68.0:-56.0:-56.0) (241.0:241.0:241.0))
+      (SETUPHOLD (negedge D) (negedge G) (-68.0:-56.0:-56.0) (241.0:241.0:241.0))
+      (SETUPHOLD (posedge GE) (negedge G) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (SETUPHOLD (negedge GE) (negedge G) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE a_reg_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE en_IBUF_BUFG_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (91.0:96.0:96.0) (91.0:96.0:96.0))
+    )
+  )
+    (TIMINGCHECK
+      (PERIOD (posedge I) (2155.2:2155.2:2155.2))
+      (PERIOD (negedge I) (2155.2:2155.2:2155.2))
+    )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE en_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (878.4:1012.5:1012.5) (878.4:1012.5:1012.5))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE q_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2533.3:2690.2:2690.2) (2533.3:2690.2:2690.2))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "latch_loop")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT a_reg/Q q_OBUF_inst/I (1339.2:1545.2:1545.2) (1339.2:1545.2:1545.2))
+      (INTERCONNECT a_reg/Q a_reg_i_1/I0 (431.8:521.8:521.8) (431.8:521.8:521.8))
+      (INTERCONNECT a_reg_i_1/O a_reg/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT en_IBUF_BUFG_inst/O a_reg/G (1696.4:1840.4:1840.4) (1696.4:1840.4:1840.4))
+      (INTERCONNECT en_IBUF_inst/O en_IBUF_BUFG_inst/I (1911.0:2015.5:2015.5) (1911.0:2015.5:2015.5))
+      )
+    )
+)
+)

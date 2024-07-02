@@ -1,0 +1,52 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "lut_loop")
+(DATE "Fri Aug 11 16:05:11 2023")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2020.2.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE en_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (795.7:926.9:926.9) (795.7:926.9:926.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE q_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2249.1:2417.2:2417.2) (2249.1:2417.2:2417.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE q_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "lut_loop")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT en_IBUF_inst/O q_OBUF_inst_i_1/I0 (813.2:972.2:972.2) (813.2:972.2:972.2))
+      (INTERCONNECT q_OBUF_inst_i_1/O q_OBUF_inst/I (1155.6:1266.6:1266.6) (1155.6:1266.6:1266.6))
+      (INTERCONNECT q_OBUF_inst_i_1/O q_OBUF_inst_i_1/I1 (187.3:222.3:222.3) (187.3:222.3:222.3))
+      )
+    )
+)
+)

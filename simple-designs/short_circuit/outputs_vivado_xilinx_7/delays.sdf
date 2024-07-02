@@ -1,0 +1,50 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "top")
+(DATE "Tue Nov 28 12:25:53 2023")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2020.2.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE a_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (737.1:867.7:867.7) (737.1:867.7:867.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE b_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (737.1:867.7:867.7) (737.1:867.7:867.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE c_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2176.7:2344.1:2344.1) (2176.7:2344.1:2344.1))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "top")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT a_IBUF_inst/O c_OBUF_inst/I (614.3:646.6:646.6) (614.3:646.6:646.6))
+      (INTERCONNECT b_IBUF_inst/O c_OBUF_inst/I (614.3:646.6:646.6) (614.3:646.6:646.6))
+      )
+    )
+)
+)

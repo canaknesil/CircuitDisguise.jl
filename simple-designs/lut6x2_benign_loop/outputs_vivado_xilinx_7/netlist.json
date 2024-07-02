@@ -1,0 +1,208 @@
+{
+  "creator": "Yosys 0.36 (git sha1 8f07a0d8404, clang 14.0.0-1ubuntu1.1 -fPIC -Os)",
+  "modules": {
+    "top": {
+      "attributes": {
+        "STRUCTURAL_NETLIST": "yes",
+        "ECO_CHECKSUM": "e1586253",
+        "hdlname": "\\top",
+        "top": "00000000000000000000000000000001",
+        "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:18.1-54.10"
+      },
+      "ports": {
+        "x": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "GND": {
+          "hide_name": 0,
+          "type": "GND",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:31.7-32.24"
+          },
+          "connections": {
+            "G": [ 4 ]
+          }
+        },
+        "LUT6_2_inst.LUT5": {
+          "hide_name": 0,
+          "type": "LUT5",
+          "parameters": {
+            "INIT": "10101010101010101010101010101010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:37.5-45.16|/mnt/c/Users/canpi/Documents/repositories/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_7.v:20.30-26.14"
+          },
+          "connections": {
+            "I0": [ 5 ],
+            "I1": [ 6 ],
+            "I2": [ 4 ],
+            "I3": [ 4 ],
+            "I4": [ 4 ],
+            "O": [ 7 ]
+          }
+        },
+        "LUT6_2_inst.LUT6": {
+          "hide_name": 0,
+          "type": "LUT6",
+          "parameters": {
+            "INIT": "1010101010101010101010101010101010101010101010101010101010101010"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:37.5-45.16|/mnt/c/Users/canpi/Documents/repositories/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_7.v:12.24-19.14"
+          },
+          "connections": {
+            "I0": [ 5 ],
+            "I1": [ 6 ],
+            "I2": [ 4 ],
+            "I3": [ 4 ],
+            "I4": [ 4 ],
+            "I5": [ 4 ],
+            "O": [ 6 ]
+          }
+        },
+        "x_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "CCIO_EN": "TRUE"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:48.5-50.20"
+          },
+          "connections": {
+            "I": [ 2 ],
+            "O": [ 5 ]
+          }
+        },
+        "y_OBUF_inst": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:51.8-53.15"
+          },
+          "connections": {
+            "I": [ 7 ],
+            "O": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "<const0>": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:24.8-24.17"
+          }
+        },
+        "LUT6_2_inst.I0": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:37.5-45.16|/mnt/c/Users/canpi/Documents/repositories/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_7.v:10.43-10.45"
+          }
+        },
+        "LUT6_2_inst.I1": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:37.5-45.16|/mnt/c/Users/canpi/Documents/repositories/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_7.v:10.47-10.49"
+          }
+        },
+        "LUT6_2_inst.I2": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:37.5-45.16|/mnt/c/Users/canpi/Documents/repositories/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_7.v:10.51-10.53"
+          }
+        },
+        "LUT6_2_inst.I3": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:37.5-45.16|/mnt/c/Users/canpi/Documents/repositories/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_7.v:10.55-10.57"
+          }
+        },
+        "LUT6_2_inst.I4": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:37.5-45.16|/mnt/c/Users/canpi/Documents/repositories/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_7.v:10.59-10.61"
+          }
+        },
+        "LUT6_2_inst.I5": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:37.5-45.16|/mnt/c/Users/canpi/Documents/repositories/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_7.v:10.63-10.65"
+          }
+        },
+        "LUT6_2_inst.O5": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:37.5-45.16|/mnt/c/Users/canpi/Documents/repositories/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_7.v:10.33-10.35"
+          }
+        },
+        "LUT6_2_inst.O6": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:37.5-45.16|/mnt/c/Users/canpi/Documents/repositories/circuit-disguise/src/../netlist-preparation/cell_map_xilinx_7.v:10.22-10.24"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:25.25-25.26"
+          }
+        },
+        "x": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:21.9-21.10"
+          }
+        },
+        "x_IBUF": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:27.8-27.14"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:22.10-22.11"
+          }
+        },
+        "y_OBUF": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "simple-designs/lut6x2_benign_loop/outputs_vivado_xilinx_7/netlist.v:29.8-29.14"
+          }
+        }
+      }
+    }
+  }
+}

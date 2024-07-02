@@ -1,0 +1,1702 @@
+{
+  "creator": "Yosys 0.36 (git sha1 8f07a0d8404, clang 14.0.0-1ubuntu1.1 -fPIC -Os)",
+  "modules": {
+    "dsp_slice": {
+      "attributes": {
+        "STRUCTURAL_NETLIST": "yes",
+        "ECO_CHECKSUM": "5c348b6",
+        "hdlname": "\\dsp_slice",
+        "top": "00000000000000000000000000000001",
+        "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:18.1-606.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "reset": {
+          "direction": "input",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "DSP48E1_inst": {
+          "hide_name": 0,
+          "type": "DSP48E1",
+          "parameters": {
+            "ACASCREG": "00000000000000000000000000000000",
+            "ADREG": "00000000000000000000000000000000",
+            "ALUMODEREG": "00000000000000000000000000000000",
+            "AREG": "00000000000000000000000000000000",
+            "AUTORESET_PATDET": "NO_RESET",
+            "A_INPUT": "DIRECT",
+            "BCASCREG": "00000000000000000000000000000000",
+            "BREG": "00000000000000000000000000000000",
+            "B_INPUT": "DIRECT",
+            "CARRYINREG": "00000000000000000000000000000000",
+            "CARRYINSELREG": "00000000000000000000000000000000",
+            "CREG": "00000000000000000000000000000000",
+            "DREG": "00000000000000000000000000000000",
+            "INMODEREG": "00000000000000000000000000000000",
+            "IS_ALUMODE_INVERTED": "0000",
+            "IS_CARRYIN_INVERTED": "0",
+            "IS_CLK_INVERTED": "0",
+            "IS_INMODE_INVERTED": "00000",
+            "IS_OPMODE_INVERTED": "0000000",
+            "MASK": "001111111111111111111111111111111111111111111111",
+            "MREG": "00000000000000000000000000000000",
+            "OPMODEREG": "00000000000000000000000000000000",
+            "PATTERN": "000000000000000000000000000000000000000000000000",
+            "PREG": "00000000000000000000000000000000",
+            "SEL_MASK": "MASK",
+            "SEL_PATTERN": "PATTERN",
+            "USE_DPORT": "FALSE",
+            "USE_MULT": "MULTIPLY",
+            "USE_PATTERN_DETECT": "NO_PATDET",
+            "USE_SIMD": "ONE48"
+          },
+          "attributes": {
+            "METHODOLOGY_DRC_VIOS": "{SYNTH-13 {cell *THIS*}}",
+            "box_type": "PRIMITIVE",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:69.5-108.27"
+          },
+          "connections": {
+            "A": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ],
+            "ACIN": [ 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34 ],
+            "ALUMODE": [ 34, 34, 35, 35 ],
+            "B": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ],
+            "BCIN": [ 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34 ],
+            "C": [ 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101 ],
+            "CARRYCASCIN": [ 34 ],
+            "CARRYIN": [ 34 ],
+            "CARRYINSEL": [ 34, 34, 34 ],
+            "CEA1": [ 35 ],
+            "CEA2": [ 35 ],
+            "CEAD": [ 35 ],
+            "CEALUMODE": [ 35 ],
+            "CEB1": [ 35 ],
+            "CEB2": [ 35 ],
+            "CEC": [ 35 ],
+            "CECARRYIN": [ 35 ],
+            "CECTRL": [ 35 ],
+            "CED": [ 35 ],
+            "CEINMODE": [ 35 ],
+            "CEM": [ 35 ],
+            "CEP": [ 35 ],
+            "CLK": [ 102 ],
+            "D": [ 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34 ],
+            "INMODE": [ 34, 34, 34, 34, 34 ],
+            "MULTSIGNIN": [ 34 ],
+            "OPMODE": [ 34, 34, 34, 34, 34, 34, 34 ],
+            "P": [ 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150 ],
+            "PCIN": [ 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34 ],
+            "RSTA": [ 151 ],
+            "RSTALLCARRYIN": [ 151 ],
+            "RSTALUMODE": [ 151 ],
+            "RSTB": [ 151 ],
+            "RSTC": [ 151 ],
+            "RSTCTRL": [ 151 ],
+            "RSTD": [ 151 ],
+            "RSTINMODE": [ 151 ],
+            "RSTM": [ 151 ],
+            "RSTP": [ 151 ]
+          }
+        },
+        "GND": {
+          "hide_name": 0,
+          "type": "GND",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:109.7-110.24"
+          },
+          "connections": {
+            "G": [ 34 ]
+          }
+        },
+        "VCC": {
+          "hide_name": 0,
+          "type": "VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:111.7-112.24"
+          },
+          "connections": {
+            "P": [ 35 ]
+          }
+        },
+        "clk_IBUF_BUFG_inst": {
+          "hide_name": 0,
+          "type": "BUFG",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:113.8-115.27"
+          },
+          "connections": {
+            "I": [ 152 ],
+            "O": [ 102 ]
+          }
+        },
+        "clk_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "CCIO_EN": "TRUE"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:118.5-120.22"
+          },
+          "connections": {
+            "I": [ 2 ],
+            "O": [ 152 ]
+          }
+        },
+        "i_0": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:123.5-125.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 33 ]
+          }
+        },
+        "i_1": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:128.5-130.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 32 ]
+          }
+        },
+        "i_10": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:133.5-135.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 23 ]
+          }
+        },
+        "i_11": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:138.5-140.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 22 ]
+          }
+        },
+        "i_12": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:143.5-145.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 21 ]
+          }
+        },
+        "i_13": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:148.5-150.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 20 ]
+          }
+        },
+        "i_14": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:153.5-155.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 19 ]
+          }
+        },
+        "i_15": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:158.5-160.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 18 ]
+          }
+        },
+        "i_16": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:163.5-165.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 17 ]
+          }
+        },
+        "i_17": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:168.5-170.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 16 ]
+          }
+        },
+        "i_18": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:173.5-175.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 15 ]
+          }
+        },
+        "i_19": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:178.5-180.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 14 ]
+          }
+        },
+        "i_2": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:183.5-185.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 31 ]
+          }
+        },
+        "i_20": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:188.5-190.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 13 ]
+          }
+        },
+        "i_21": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:193.5-195.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 12 ]
+          }
+        },
+        "i_22": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:198.5-200.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 11 ]
+          }
+        },
+        "i_23": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:203.5-205.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 10 ]
+          }
+        },
+        "i_24": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:208.5-210.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 9 ]
+          }
+        },
+        "i_25": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:213.5-215.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 8 ]
+          }
+        },
+        "i_26": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:218.5-220.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 7 ]
+          }
+        },
+        "i_27": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:223.5-225.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 6 ]
+          }
+        },
+        "i_28": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:228.5-230.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 5 ]
+          }
+        },
+        "i_29": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:233.5-235.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 4 ]
+          }
+        },
+        "i_3": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:238.5-240.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 30 ]
+          }
+        },
+        "i_30": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:243.5-245.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 53 ]
+          }
+        },
+        "i_31": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:248.5-250.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 52 ]
+          }
+        },
+        "i_32": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:253.5-255.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 51 ]
+          }
+        },
+        "i_33": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:258.5-260.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 50 ]
+          }
+        },
+        "i_34": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:263.5-265.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 49 ]
+          }
+        },
+        "i_35": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:268.5-270.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 48 ]
+          }
+        },
+        "i_36": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:273.5-275.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 47 ]
+          }
+        },
+        "i_37": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:278.5-280.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 46 ]
+          }
+        },
+        "i_38": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:283.5-285.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 45 ]
+          }
+        },
+        "i_39": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:288.5-290.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 44 ]
+          }
+        },
+        "i_4": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:293.5-295.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 29 ]
+          }
+        },
+        "i_40": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:298.5-300.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 43 ]
+          }
+        },
+        "i_41": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:303.5-305.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 42 ]
+          }
+        },
+        "i_42": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:308.5-310.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 41 ]
+          }
+        },
+        "i_43": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:313.5-315.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 40 ]
+          }
+        },
+        "i_44": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:318.5-320.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 39 ]
+          }
+        },
+        "i_45": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:323.5-325.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 38 ]
+          }
+        },
+        "i_46": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:328.5-330.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 37 ]
+          }
+        },
+        "i_47": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:333.5-335.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 36 ]
+          }
+        },
+        "i_48": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:338.5-340.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 101 ]
+          }
+        },
+        "i_49": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:343.5-345.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 100 ]
+          }
+        },
+        "i_5": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:348.5-350.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 28 ]
+          }
+        },
+        "i_50": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:353.5-355.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 99 ]
+          }
+        },
+        "i_51": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:358.5-360.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 98 ]
+          }
+        },
+        "i_52": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:363.5-365.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 97 ]
+          }
+        },
+        "i_53": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:368.5-370.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 96 ]
+          }
+        },
+        "i_54": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:373.5-375.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 95 ]
+          }
+        },
+        "i_55": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:378.5-380.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 94 ]
+          }
+        },
+        "i_56": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:383.5-385.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 93 ]
+          }
+        },
+        "i_57": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:388.5-390.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 92 ]
+          }
+        },
+        "i_58": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:393.5-395.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 91 ]
+          }
+        },
+        "i_59": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:398.5-400.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 90 ]
+          }
+        },
+        "i_6": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:403.5-405.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 27 ]
+          }
+        },
+        "i_60": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:408.5-410.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 89 ]
+          }
+        },
+        "i_61": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:413.5-415.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 88 ]
+          }
+        },
+        "i_62": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:418.5-420.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 87 ]
+          }
+        },
+        "i_63": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:423.5-425.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 86 ]
+          }
+        },
+        "i_64": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:428.5-430.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 85 ]
+          }
+        },
+        "i_65": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:433.5-435.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 84 ]
+          }
+        },
+        "i_66": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:438.5-440.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 83 ]
+          }
+        },
+        "i_67": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:443.5-445.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 82 ]
+          }
+        },
+        "i_68": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:448.5-450.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 81 ]
+          }
+        },
+        "i_69": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:453.5-455.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 80 ]
+          }
+        },
+        "i_7": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:458.5-460.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 26 ]
+          }
+        },
+        "i_70": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:463.5-465.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 79 ]
+          }
+        },
+        "i_71": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:468.5-470.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 78 ]
+          }
+        },
+        "i_72": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:473.5-475.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 77 ]
+          }
+        },
+        "i_73": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:478.5-480.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 76 ]
+          }
+        },
+        "i_74": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:483.5-485.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 75 ]
+          }
+        },
+        "i_75": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:488.5-490.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 74 ]
+          }
+        },
+        "i_76": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:493.5-495.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 73 ]
+          }
+        },
+        "i_77": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:498.5-500.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 72 ]
+          }
+        },
+        "i_78": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:503.5-505.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 71 ]
+          }
+        },
+        "i_79": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:508.5-510.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 70 ]
+          }
+        },
+        "i_8": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:513.5-515.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 25 ]
+          }
+        },
+        "i_80": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:518.5-520.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 69 ]
+          }
+        },
+        "i_81": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:523.5-525.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 68 ]
+          }
+        },
+        "i_82": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:528.5-530.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 67 ]
+          }
+        },
+        "i_83": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:533.5-535.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 66 ]
+          }
+        },
+        "i_84": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:538.5-540.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 65 ]
+          }
+        },
+        "i_85": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:543.5-545.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 64 ]
+          }
+        },
+        "i_86": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:548.5-550.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 63 ]
+          }
+        },
+        "i_87": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:553.5-555.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 62 ]
+          }
+        },
+        "i_88": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:558.5-560.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 61 ]
+          }
+        },
+        "i_89": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:563.5-565.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 60 ]
+          }
+        },
+        "i_9": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:568.5-570.19"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 24 ]
+          }
+        },
+        "i_90": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:573.5-575.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 59 ]
+          }
+        },
+        "i_91": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:578.5-580.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 58 ]
+          }
+        },
+        "i_92": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:583.5-585.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 57 ]
+          }
+        },
+        "i_93": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:588.5-590.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 56 ]
+          }
+        },
+        "i_94": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:593.5-595.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 55 ]
+          }
+        },
+        "i_95": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "10"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:598.5-600.18"
+          },
+          "connections": {
+            "I0": [ 34 ],
+            "O": [ 54 ]
+          }
+        },
+        "reset_IBUF_inst": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "CCIO_EN": "TRUE"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:603.5-605.24"
+          },
+          "connections": {
+            "I": [ 3 ],
+            "O": [ 151 ]
+          }
+        }
+      },
+      "netnames": {
+        "<const0>": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:24.8-24.17"
+          }
+        },
+        "<const1>": {
+          "hide_name": 0,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:25.8-25.17"
+          }
+        },
+        "A": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ],
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:26.31-26.32"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ],
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:27.31-27.32"
+          }
+        },
+        "C": {
+          "hide_name": 0,
+          "bits": [ 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101 ],
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:28.31-28.32"
+          }
+        },
+        "P": {
+          "hide_name": 0,
+          "bits": [ 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150 ],
+          "attributes": {
+            "DONT_TOUCH": "00000000000000000000000000000001",
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:29.31-29.32"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:21.9-21.12"
+          }
+        },
+        "clk_IBUF": {
+          "hide_name": 0,
+          "bits": [ 152 ],
+          "attributes": {
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:31.8-31.16"
+          }
+        },
+        "clk_IBUF_BUFG": {
+          "hide_name": 0,
+          "bits": [ 102 ],
+          "attributes": {
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:32.8-32.21"
+          }
+        },
+        "reset": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:22.9-22.14"
+          }
+        },
+        "reset_IBUF": {
+          "hide_name": 0,
+          "bits": [ 151 ],
+          "attributes": {
+            "src": "simple-designs/dsp_slice_without_registers/outputs_vivado_xilinx_7/netlist.v:34.8-34.18"
+          }
+        }
+      }
+    }
+  }
+}

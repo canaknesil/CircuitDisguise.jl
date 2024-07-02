@@ -1,0 +1,106 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "self_triggering_ff")
+(DATE "Tue Sep  5 12:13:48 2023")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2020.2.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE a_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDCE")
+  (INSTANCE a_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (525.0:654.0:654.0))
+      (IOPATH C Q (229.0:285.0:285.0) (229.0:285.0:285.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (71.0:88.0:88.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (71.0:88.0:88.0) (-10.0:-10.0:-10.0))
+      (RECREM (negedge CLR) (posedge C) (264.0:329.0:329.0) (-224.0:-224.0:-224.0))
+      (SETUPHOLD (posedge D) (posedge C) (-55.0:-45.0:-45.0) (198.0:198.0:198.0))
+      (SETUPHOLD (negedge D) (posedge C) (-55.0:-45.0:-45.0) (198.0:198.0:198.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE b_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE clk_inferred_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE en_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (795.7:926.9:926.9) (795.7:926.9:926.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE q_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2249.3:2417.4:2417.4) (2249.3:2417.4:2417.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE reset_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (809.5:940.8:940.8) (809.5:940.8:940.8))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "self_triggering_ff")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT a_i_1/O a_reg/D (72.0:90.0:90.0) (72.0:90.0:90.0))
+      (INTERCONNECT a_reg/Q q_OBUF_inst/I (1375.4:1520.4:1520.4) (1375.4:1520.4:1520.4))
+      (INTERCONNECT a_reg/Q a_i_1/I0 (354.1:428.1:428.1) (354.1:428.1:428.1))
+      (INTERCONNECT a_reg/Q b_inst/I0 (569.8:690.8:690.8) (569.8:690.8:690.8))
+      (INTERCONNECT a_reg/Q clk_inferred_i_1/I1 (350.9:424.9:424.9) (350.9:424.9:424.9))
+      (INTERCONNECT b_inst/O clk_inferred_i_1/I0 (102.0:120.0:120.0) (102.0:120.0:120.0))
+      (INTERCONNECT clk_inferred_i_1/O a_reg/C (443.6:534.6:534.6) (443.6:534.6:534.6))
+      (INTERCONNECT en_IBUF_inst/O clk_inferred_i_1/I2 (668.4:790.4:790.4) (668.4:790.4:790.4))
+      (INTERCONNECT reset_IBUF_inst/O a_reg/CLR (684.8:808.8:808.8) (684.8:808.8:808.8))
+      )
+    )
+)
+)
